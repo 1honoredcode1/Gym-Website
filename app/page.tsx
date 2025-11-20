@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import { NavBar } from "@/components/NavBar";
 import Programs from "@/components/Programs";
@@ -12,6 +13,7 @@ export default function Home() {
       <Programs />
       <About />
       <Trainers />
+      <Footer />
     </main>
   );
 }

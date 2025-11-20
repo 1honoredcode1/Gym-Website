@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const HeroContent = () => {
   const contentRef = useRef<HTMLDivElement | null>(null);
@@ -30,28 +31,29 @@ const HeroContent = () => {
   return (
     <div
       ref={contentRef}
-      className="relative z-10 text-white text-center px-4 max-w-4xl space-y-6"
+      className="relative z-10 text-white text-center px-4 max-w-3xl md:max-w-4xl space-y-6"
     >
-      <h1 className="hero-item text-4xl md:text-6xl font-black font-heading mb-2 leading-tight">
+      <h1 className="hero-item text-3xl sm:text-4xl lg:text-6xl font-black font-heading leading-tight">
         Manifest your true self,{" "}
         <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
           Become Your Best Version
         </span>
       </h1>
 
-      <p className="hero-item text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+      <p className="hero-item text-base sm:text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
         Join our community today. Build strength, confidence, and healthier
         habits with expert coaching and a supportive atmosphere.{" "}
         <a
-          href="#"
+          href="#about"
           className="
             relative
+            inline-block
             text-white
-            text-lg md:text-xl
+            font-medium
             hover:text-primary
-            px-2 py-2 
+            px-1
             transition-colors duration-300
-            after:content-[''] after:absolute after:left-0 after:bottom-1
+            after:content-[''] after:absolute after:left-0 after:bottom-0
             after:h-0.5 after:w-full after:bg-primary
             after:origin-left after:scale-x-0
             after:transition-transform after:duration-300
@@ -62,12 +64,19 @@ const HeroContent = () => {
         </a>
       </p>
 
-      <div className="hero-item flex flex-col sm:flex-row gap-4 justify-center">
-        <Button size="lg" variant="primary">
+      <div className="hero-item flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
+        <Button size="lg" variant="primary" className="w-full sm:w-auto">
           Start Now
         </Button>
-        <Button size="lg" variant="secondary">
-          View Plans
+
+        {/* shadcn style: asChild so Link is the actual element */}
+        <Button
+          size="lg"
+          variant="secondary"
+          className="w-full sm:w-auto"
+          asChild
+        >
+          <Link href="#about">View Plans</Link>
         </Button>
       </div>
     </div>

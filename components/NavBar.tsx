@@ -41,7 +41,7 @@ export const NavBar = () => {
           {/* CTA */}
           <div className="hidden md:flex items-center space-x-4">
             <Button className="font-semibold " variant="primary">
-              Join Us Now
+              Start Now
             </Button>
           </div>
         </div>
