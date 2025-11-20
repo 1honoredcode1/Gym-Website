@@ -1,6 +1,8 @@
 import { navItems } from "@/lib/constants";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "./ThemeToggle";
+import MobileNavigation from "./MobileNavigation";
 
 export const NavBar = () => {
   return (
@@ -40,9 +42,13 @@ export const NavBar = () => {
           </div>
           {/* CTA */}
           <div className="hidden md:flex items-center space-x-4">
+            <ThemeToggle />
             <Button className="font-semibold " variant="primary">
               Start Now
             </Button>
+          </div>
+          <div className="md:hidden">
+            <MobileNavigation />
           </div>
         </div>
       </div>
