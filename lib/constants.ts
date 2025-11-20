@@ -1,9 +1,9 @@
 export const navItems = [
-  { name: "Home", href: "#" },
-  { name: "Programs", href: "#" },
-  { name: "About", href: "#" },
-  { name: "Pricing", href: "#" },
-  { name: "Contact", href: "#" },
+  { name: "Home", href: "#hero" },
+  { name: "Programs", href: "#programs" },
+  { name: "About", href: "#about" },
+  { name: "Pricing", href: "#price" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export const gymPrograms = [

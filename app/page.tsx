@@ -1,3 +1,4 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
 import { NavBar } from "@/components/NavBar";
 import Programs from "@/components/Programs";
@@ -8,6 +9,7 @@ export default function Home() {
       <NavBar />
       <Hero />
       <Programs />
+      <About />
     </main>
   );
 }

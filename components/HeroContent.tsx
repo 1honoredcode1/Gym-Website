@@ -32,10 +32,10 @@ const HeroContent = () => {
       ref={contentRef}
       className="relative z-10 text-white text-center px-4 max-w-4xl space-y-6"
     >
-      <h1 className="hero-item text-5xl md:text-7xl font-black font-heading mb-2 leading-tight">
+      <h1 className="hero-item text-4xl md:text-6xl font-black font-heading mb-2 leading-tight">
         Manifest your true self,{" "}
-        <span className="bg-linear-to-l from-primary to-secondary bg-clip-text text-transparent">
-          Become Your Version
+        <span className="bg-linear-to-r from-primary to-secondary bg-clip-text text-transparent">
+          Become Your Best Version
         </span>
       </h1>
 

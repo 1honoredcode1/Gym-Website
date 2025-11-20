@@ -2,7 +2,10 @@ import Image from "next/image";
 import HeroContent from "./HeroContent";
 const Hero = () => {
   return (
-    <section className="h-screen relative flex items-center justify-center overflow-hidden pt-16">
+    <section
+      id="hero"
+      className="h-screen relative flex items-center justify-center overflow-hidden pt-16"
+    >
       <div className="absolute inset-0">
         <Image
           src="/fitness-hero.jpg"
