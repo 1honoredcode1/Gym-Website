@@ -30,7 +30,7 @@ const Programs = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {gymPrograms.map((program, index) => (
             <motion.div className="group cursor-pointer" key={program.title}>
-              <Card className="p-0 transition-shadow shadow-primary/40 duration-300 hover:shadow-2xl group-hover:scale-105 ">
+              <Card className="p-0 transition-shadow shadow-primary/40 duration-300 hover:shadow-2xl group-hover:scale-105 bg-background">
                 <div className="relative overflow-hidden rounded-t-lg w-full h-60 md:h-40 lg:h-40">
                   <Image
                     src={program.image}
@@ -61,7 +61,7 @@ const Programs = () => {
                       ease: "easeOut",
                       delay: index * 0.3,
                     }}
-                    className="text-muted-foreground mb-4 leading-relaxed"
+                    className="text-muted-foreground mb-4 font-semibold leading-relaxed"
                   >
                     {program.description}{" "}
                   </motion.p>

@@ -2,8 +2,7 @@ export const navItems = [
   { name: "Home", href: "#hero" },
   { name: "Programs", href: "#programs" },
   { name: "About", href: "#about" },
-  { name: "Pricing", href: "#price" },
-  { name: "Contact", href: "#contact" },
+  { name: "Trainers", href: "#trainers" },
 ];
 
 export const gymPrograms = [
@@ -30,5 +29,40 @@ export const gymPrograms = [
     description:
       "Maximize calorie burn and fitness gains with interval-based training.",
     image: "/training.jpg",
+  },
+];
+
+export const gymTrainers = [
+  {
+    name: "dark",
+    image: "/coaches/dark.jpg",
+  },
+  {
+    name: "Alex Novak",
+    image: "/coaches/trainer1.jpg",
+  },
+  {
+    name: "Sara Jensen",
+    image: "/coaches/trainer2.jpg",
+  },
+  {
+    name: "Liam Ortiz",
+    image: "/coaches/trainer3.jpg",
+  },
+  {
+    name: "Maya Lee",
+    image: "/coaches/trainer4.jpg",
+  },
+  {
+    name: "Lia Ortiz",
+    image: "/coaches/trainer5.jpg",
+  },
+  {
+    name: "John Bob",
+    image: "/coaches/trainer6.jpg",
+  },
+  {
+    name: "mat",
+    image: "/coaches/mat.jpg",
   },
 ];
